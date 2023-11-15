@@ -1,0 +1,920 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Zim Event Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/odometer-theme-default.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <style>
+        	#map{
+        		height: 500px;
+        		position: relative;
+        	}
+        </style>
+    </head>
+    <body class="main">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header id="home">
+			<div id="abstruct_area">
+				<div class="container text-center">
+					<div class="row">
+						<div class="banner-texts white-color">
+							<p class="event-info">
+								<span><i class="fa fa-map-marker"></i> San Francisco</span>
+								<span><i class="fa fa-calendar"></i> 20-22 February 2018</span>
+							</p>
+							<h1 class="title text-uppercase">North Conference</h1>
+							<div class="action-buttons">
+								<a href="#about" class="next-section text-uppercase btn blue-button white-color">buy ticket</a>
+								<a href="https://www.youtube.com/watch?v=A1CoJKju-YI" class="text-uppercase btn blue-button white-color popup-video"><i class="fa fa-play-circle-o"></i> watch video</a>
+							</div>
+						</div>
+						
+						<div class="time-circle-area">
+							<div id="DateCountdown" data-date="2018-2-20 00:48:40" style="width: 100%;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="nav-holder">
+			<nav class="navbar navbar-default branding-bg sticky">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="img/logo.png" alt="" /></a>
+					</div>
+					
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="main-nav nav navbar-nav text-uppercase text-right">
+							<li class="active"><a href="#home">home</a></li>
+							<li><a href="#about">about</a></li>
+							<li><a href="#speakers">spearkers</a></li>
+							<li><a href="#schedule">schedule</a></li>
+							<li><a href="#sponsors">sponsors</a></li>
+							
+							<li><a href="#price">price</a></li>
+							<li><a href="#blog">blog</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+		
+		
+		<section id="about" class="about-event" onmouseenter="aboutEvent()">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="left">
+							<h1 class="heading">About</h1>
+							<h1 class="sub-heading">The Event</h1>
+							<p class="branding-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+						</div>
+					</div>
+					
+					<div class="col-sm-6">
+						<div class="right">
+							<div class="events">
+								<div class="event">
+									<div class="col-sm-6 col-xs-6 nopadding first">
+										<img class="img-responsive" src="img/event-1.png" alt="" />
+										<div class="texts text-center text-uppercase">
+											<p id="odometer" class="date odometer">0</p>
+											<p>speakers</p>
+										</div>
+									</div>
+								</div>
+								<div class="event">
+									<div class="col-sm-6 col-xs-6 nopadding second">
+										<img class="img-responsive" src="img/event-2.png" alt="" />
+										<div class="texts text-center text-uppercase">
+											<p id="odometer2" class="date odometer">0</p>
+											<p>keynotes</p>
+										</div>
+									</div>
+								</div>
+								<div class="event">
+									<div class="col-sm-6 col-xs-6 nopadding third">
+										<img class="img-responsive" src="img/event-3.png" alt="" />
+										<div class="texts text-center text-uppercase">
+											<p id="odometer3" class="date odometer">0</p>
+											<p>mentors</p>
+										</div>
+									</div>
+								</div>
+								<div class="event">
+									<div class="col-sm-6 col-xs-6 nopadding fourth">
+										<img class="img-responsive" src="img/event-4.png" alt="" />
+										<div class="texts text-center text-uppercase">
+											<p id="odometer4" class="date odometer">0</p>
+											<p>review</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	<!-- end about-event section -->
+		
+		
+		<section class="upcoming-events-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 text-center">
+						<h1 class="title">Upcoming Event</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br/>
+						incididunt ut labore et dolore magna aliqua</p>
+					</div>
+					<div class="clearfix"></div>
+					
+					<div class="upcoming-events">
+						
+						
+						<!-- ITEM FILTER -->
+						<ul class="item-filter item-filter-v2 text-center list-inline">
+							<li class="active text-uppercase btn blue-button branding-color" data-group="all">13 Tuesday</li>
+							<li class="text-uppercase btn blue-button branding-color" data-group="thrusday">15 Thrusday</li>
+							<li class="text-uppercase btn blue-button branding-color" data-group="friday">16 Friday</li>
+						</ul> <!-- //item-filter -->
+
+						<div class="events-wrapper">
+							<div class="tab-content upcoming-events-tab-contents">
+								<div class="col-sm-3 col-xs-6 single" data-groups='["all", "friday"]'>
+									<div class="inner">
+										<div class="img-holder">
+											<a href="#"><img src="img/grid-img1.png" alt="" class="img-responsive" /></a>
+										</div>
+										<p class="time"><i class="fa fa-clock-o"></i> 12:00 am - 2:25 pm</p>
+										<h3 class="title"><a href="#" class="branding-color">Private Pesticide Applicators Training</a></h3>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6 single" data-groups='["thrusday"]'>
+									<div class="inner">
+										<div class="img-holder">
+											<a href="#"><img src="img/grid-img2.png" alt="" class="img-responsive" /></a>
+										</div>
+										<p class="time"><i class="fa fa-clock-o"></i> 12:00 am - 2:25 pm</p>
+										<h3 class="title"><a href="#" class="branding-color">Private Pesticide Applicators Training</a></h3>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6 single" data-groups='["all", "friday"]'>
+									<div class="inner">
+										<div class="img-holder">
+											<a href="#"><img src="img/grid-img3.png" alt="" class="img-responsive" /></a>
+										</div>
+										<p class="time"><i class="fa fa-clock-o"></i> 12:00 am - 2:25 pm</p>
+										<h3 class="title"><a href="#" class="branding-color">Private Pesticide Applicators Training</a></h3>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6 single" data-groups='["all"]'>
+									<div class="inner">
+										<div class="img-holder">
+											<a href="#"><img src="img/grid-img4.png" alt="" class="img-responsive" /></a>
+										</div>
+										<p class="time"><i class="fa fa-clock-o"></i> 12:00 am - 2:25 pm</p>
+										<h3 class="title"><a href="#" class="branding-color">Private Pesticide Applicators Training</a></h3>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6 single" data-groups='["thrusday"]'>
+									<div class="inner">
+										<div class="img-holder">
+											<a href="#"><img src="img/grid-img5.png" alt="" class="img-responsive" /></a>
+										</div>
+										<p class="time"><i class="fa fa-clock-o"></i> 12:00 am - 2:25 pm</p>
+										<h3 class="title"><a href="#" class="branding-color">Private Pesticide Applicators Training</a></h3>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6 single" data-groups='["friday"]'>
+									<div class="inner">
+										<div class="img-holder">
+											<a href="#"><img src="img/grid-img6.png" alt="" class="img-responsive" /></a>
+										</div>
+										<p class="time"><i class="fa fa-clock-o"></i> 12:00 am - 2:25 pm</p>
+										<h3 class="title"><a href="#" class="branding-color">Private Pesticide Applicators Training</a></h3>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6 single" data-groups='["thrusday"]'>
+									<div class="inner">
+										<div class="img-holder">
+											<a href="#"><img src="img/grid-img7.png" alt="" class="img-responsive" /></a>
+										</div>
+										<p class="time"><i class="fa fa-clock-o"></i> 12:00 am - 2:25 pm</p>
+										<h3 class="title"><a href="#" class="branding-color">Private Pesticide Applicators Training</a></h3>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6 single" data-groups='["friday"]'>
+									<div class="inner">
+										<div class="img-holder">
+											<a href="#"><img src="img/grid-img8.png" alt="" class="img-responsive" /></a>
+										</div>
+										<p class="time"><i class="fa fa-clock-o"></i> 12:00 am - 2:25 pm</p>
+										<h3 class="title"><a href="#" class="branding-color">Private Pesticide Applicators Training</a></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</section>	 <!-- end upcoming-events-area section -->
+		
+		
+		
+		<section class="north-conference">
+			<div class="container">
+				<div class="row text-center">
+					<h1 class="white-color">Register to North Conference</h1>
+					<a href="#" class="btn btn-transparent text-uppercase white-color">register now</a>
+				</div>
+			</div>
+		</section>	 <!-- end north conderence section -->
+		
+		
+		<section id="speakers" class="keynote-speaker-area">
+			<div class="container">
+				<div class="row">
+					<h1>Keynote speakers</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br/> sed do eiusmod tempor incididunt ut labore et dolore<br/> magna aliqua.</p>
+					
+					<div class="speakers clearfix">
+						<div class="single col-sm-3 col-xs-6">
+							<div class="inner hover ehover1">
+								<img src="img/speaker1.png" alt="" class="img-responsive" />
+								<div class="texts overlay">
+									<h3>Andre Geffroy<span>CEO, Google Inc</span></h3>
+									<ul class="list-unstyled socials">
+										<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single col-sm-3 col-xs-6">
+							<div class="inner">
+								<img src="img/speaker2.png" alt="" class="img-responsive" />
+								<div class="texts">
+									<h3>Andre Geffroy<span>CEO, Google Inc</span></h3>
+									<ul class="list-unstyled socials">
+										<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single col-sm-3 col-xs-6">
+							<div class="inner">
+								<img src="img/speaker3.png" alt="" class="img-responsive" />
+								<div class="texts">
+									<h3>Andre Geffroy<span>CEO, Google Inc</span></h3>
+									<ul class="list-unstyled socials">
+										<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single col-sm-3 col-xs-6">
+							<div class="inner">
+								<img src="img/speaker4.png" alt="" class="img-responsive" />
+								<div class="texts">
+									<h3>Andre Geffroy<span>CEO, Google Inc</span></h3>
+									<ul class="list-unstyled socials">
+										<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single col-sm-3 col-xs-6">
+							<div class="inner">
+								<img src="img/speaker5.png" alt="" class="img-responsive" />
+								<div class="texts">
+									<h3>Andre Geffroy<span>CEO, Google Inc</span></h3>
+									<ul class="list-unstyled socials">
+										<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single col-sm-3 col-xs-6">
+							<div class="inner">
+								<img src="img/speaker6.png" alt="" class="img-responsive" />
+								<div class="texts">
+									<h3>Andre Geffroy<span>CEO, Google Inc</span></h3>
+									<ul class="list-unstyled socials">
+										<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single col-sm-3 col-xs-6">
+							<div class="inner">
+								<img src="img/speaker7.png" alt="" class="img-responsive" />
+								<div class="texts">
+									<h3>Andre Geffroy<span>CEO, Google Inc</span></h3>
+									<ul class="list-unstyled socials">
+										<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single col-sm-3 col-xs-6">
+							<div class="inner">
+								<img src="img/speaker8.png" alt="" class="img-responsive" />
+								<div class="texts">
+									<h3>Andre Geffroy<span>CEO, Google Inc</span></h3>
+									<ul class="list-unstyled socials">
+										<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	 <!-- end keynote speaker area section -->
+		
+		
+		<section id="schedule" class="upcoming-events-area event-schedule-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 text-center">
+						<h1 class="title">Event Schedule</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br/>
+						incididunt ut labore et dolore magna aliqua</p>
+					</div>
+					<div class="clearfix"></div>
+					
+					<div class="upcoming-events">
+						<ul class="nav nav-tabs nav-tabs-gradient text-center">
+							<li class="active">
+								<a class="text-uppercase btn blue-button branding-color" data-toggle="tab" href="#schedule01">13 JAN</a>
+							</li>
+							<li>
+								<a class="text-uppercase btn blue-button branding-color" data-toggle="tab" href="#schedule02">14 JAN</a>
+							</li>
+							<li>
+								<a class="text-uppercase btn blue-button branding-color" data-toggle="tab" href="#schedule03">15 JAN</a>
+							</li>
+						</ul> 
+
+						
+						<div class="tab-content">
+							<div id="schedule01" class="tab-pane fade in active">
+								<div class="panel-body">
+									<div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2 single">
+										<h4 class="time-range"><i class="fa fa-clock-o"></i> 12:00 am - 2:25 pm</h4>
+										<h3>The Future of the Web: and how to prepare for it now</h3>
+										
+										<div class="speakers-details">
+											<div class="col-sm-6 col-xs-6 left">
+												<img src="img/mathew-thomas.png" alt="" class="img-responsive pull-left" />
+												<h4>Matthew Thomas<span>Web Designer</span></h4>
+											</div>
+											<div class="col-sm-6 col-xs-6 right">
+												<i class="fa fa-map-marker pull-left branding-color"></i>
+												<h4>Room<span>Eastern Side A1</span></h4>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2 single second">
+										<h4 class="time-range"><i class="fa fa-clock-o"></i> 12:00 am - 2:25 pm</h4>
+										<h3>The Future of the Web: and how to prepare for it now</h3>
+										
+										<div class="speakers-details">
+											<div class="col-sm-6 col-xs-6 left">
+												<img src="img/john doe.png" alt="" class="img-responsive pull-left" />
+												<h4>John Doe<span>Web Designer</span></h4>
+											</div>
+											<div class="col-sm-6 col-xs-6 right">
+												<i class="fa fa-map-marker pull-left branding-color"></i>
+												<h4>Room<span>Eastern Side A1</span></h4>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2 single single-title third">
+										<h3>Coffee Break</h3>
+									</div>
+									<div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2 single fourth">
+										<h4 class="time-range"><i class="fa fa-clock-o"></i> 12:00 am - 2:25 pm</h4>
+										<h3>The Future of the Web: and how to prepare for it now</h3>
+										
+										<div class="speakers-details">
+											<div class="col-sm-6 col-xs-6 left">
+												<img src="img/mathew-thomas.png" alt="" class="img-responsive pull-left" />
+												<h4>Matthew Thomas<span>Web Designer</span></h4>
+											</div>
+											<div class="col-sm-6 col-xs-6 right">
+												<i class="fa fa-map-marker pull-left branding-color"></i>
+												<h4>Room<span>Eastern Side A1</span></h4>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2 single single-title fifth">
+										<h3>Lunch Break</h3>
+									</div>
+								</div>
+							</div>
+
+							<div id="schedule02" class="tab-pane fade">
+								<div class="panel-body">
+									<div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2 single second">
+										<h4 class="time-range"><i class="fa fa-clock-o"></i> 12:00 am - 2:25 pm</h4>
+										<h3>The Future of the Web: and how to prepare for it now</h3>
+										
+										<div class="speakers-details">
+											<div class="col-sm-6 col-xs-6 left">
+												<img src="img/john doe.png" alt="" class="img-responsive pull-left" />
+												<h4>John Doe<span>Web Designer</span></h4>
+											</div>
+											<div class="col-sm-6 col-xs-6 right">
+												<i class="fa fa-map-marker pull-left branding-color"></i>
+												<h4>Room<span>Eastern Side A1</span></h4>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2 single single-title third">
+										<h3>Coffee Break</h3>
+									</div>
+									<div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2 single fourth">
+										<h4 class="time-range"><i class="fa fa-clock-o"></i> 12:00 am - 2:25 pm</h4>
+										<h3>The Future of the Web: and how to prepare for it now</h3>
+										
+										<div class="speakers-details">
+											<div class="col-sm-6 col-xs-6 left">
+												<img src="img/mathew-thomas.png" alt="" class="img-responsive pull-left" />
+												<h4>Matthew Thomas<span>Web Designer</span></h4>
+											</div>
+											<div class="col-sm-6 col-xs-6 right">
+												<i class="fa fa-map-marker pull-left branding-color"></i>
+												<h4>Room<span>Eastern Side A1</span></h4>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2 single single-title fifth">
+										<h3>Lunch Break</h3>
+									</div>
+								</div>
+							</div> 
+
+							<div id="schedule03" class="tab-pane fade">
+								<div class="panel-body">
+									<div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2 single single-title third">
+										<h3>Coffee Break</h3>
+									</div>
+									<div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2 single fourth">
+										<h4 class="time-range"><i class="fa fa-clock-o"></i> 12:00 am - 2:25 pm</h4>
+										<h3>The Future of the Web: and how to prepare for it now</h3>
+										
+										<div class="speakers-details">
+											<div class="col-sm-6 col-xs-6 left">
+												<img src="img/mathew-thomas.png" alt="" class="img-responsive pull-left" />
+												<h4>Matthew Thomas<span>Web Designer</span></h4>
+											</div>
+											<div class="col-sm-6 col-xs-6 right">
+												<i class="fa fa-map-marker pull-left branding-color"></i>
+												<h4>Room<span>Eastern Side A1</span></h4>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-2 single single-title fifth">
+										<h3>Lunch Break</h3>
+									</div>
+								</div>
+							</div> 
+						</div>	
+					</div>		
+				</div>
+			</div>
+		</section>	 <!-- end event-schedule-area section -->
+		
+		
+		<section id="sponsors" class="north-conference sponsors">
+			<div class="container">
+				<div class="row">
+					<h3 class="col-sm-6  col-xs-6">Gold Sponsors</h3>
+					<h3 class="col-sm-6 col-xs-6">Platinum Sponsors</h3>
+					<div class="clearfix"></div>
+					
+					<div class="all-sponsors">
+						<div class="horizontal-row">
+							<div class="col-sm-2 col-xs-2">
+								<div class="single">
+									<img src="img/client-1.png" alt="" class="img-responsive" />
+								</div>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<div class="single">
+									<img src="img/client-2.png" alt="" class="img-responsive" />
+								</div>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<div class="single">
+									<img src="img/client-3.png" alt="" class="img-responsive" />
+								</div>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<div class="single">
+									<img src="img/client-4.png" alt="" class="img-responsive" />
+								</div>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<div class="single">
+									<img src="img/client-5.png" alt="" class="img-responsive" />
+								</div>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<div class="single">
+									<img src="img/client-6.png" alt="" class="img-responsive" />
+								</div>
+							</div>
+						</div>
+						<div class="horizontal-row">
+							<div class="col-sm-2 col-xs-2">
+								<div class="single">
+									<img src="img/client-7.png" alt="" class="img-responsive" />
+								</div>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<div class="single">
+									<img src="img/client-8.png" alt="" class="img-responsive" />
+								</div>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<div class="single">
+									<img src="img/client-9.png" alt="" class="img-responsive" />
+								</div>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<div class="single">
+									<img src="img/client-10.png" alt="" class="img-responsive" />
+								</div>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<div class="single">
+									<img src="img/client-11.png" alt="" class="img-responsive" />
+								</div>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<div class="single">
+									<img src="img/client-12.png" alt="" class="img-responsive" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	 <!-- end sponsors section -->
+		
+		
+		
+		<section id="price" class="pricing-table-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 text-center">
+						<h1 class="title">Pricing</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br/>
+						incididunt ut labore et dolore magna aliqua</p>
+					</div>
+					<div class="clearfix"></div>
+					
+					<div class="pricing-table text-center clearfix">
+						<div class="col-sm-4 col-xs-6">
+							<div class="single">
+								<h2 class="package-name">Platinum Pass</h2>
+								<h1 class="price">$550 <span>100 Tickets</span></h1>
+								<p>Regular Seat</p>
+								<p>Free Coffee/Desert</p>
+								<p>Three Days Access</p>
+								<p>1-Enterence Workshop</p>
+								<a class="text-uppercase btn blue-button white-color branding-color" href="#">buy now</a>
+							</div>
+						</div>
+						<div class="col-sm-4 col-xs-6">
+							<div class="single gold">
+								<h2 class="package-name">Gold Pass</h2>
+								<h1 class="price">$490 <span>300 Tickets</span></h1>
+								<p>Regular Seat</p>
+								<p>Free Coffee/Desert</p>
+								<p>Three Days Access</p>
+								<p>1-Enterence Workshop</p>
+								<a class="text-uppercase btn blue-button white-color branding-color" href="#">buy now</a>
+							</div>
+						</div>
+						<div class="col-sm-4 col-xs-6">
+							<div class="single silver">
+								<h2 class="package-name">Silver Pass</h2>
+								<h1 class="price">$99 <span>200 Tickets</span></h1>
+								<p>Regular Seat</p>
+								<p>Free Coffee/Desert</p>
+								<p>Three Days Access</p>
+								<p>1-Enterence Workshop</p>
+								<a class="text-uppercase btn blue-button white-color branding-color" href="#">buy now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	 <!-- end pricing-table-area -->
+		
+		
+		<section id="blog" class="blog-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8">
+						<h1 class="title">Interesting for reading</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br/>
+						incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="clearfix"></div>
+					
+					<div class="blogs clearfix">
+						<div class="col-sm-4 col-xs-6">
+							<div class="single">
+								<div class="blog-img">
+									<a href="blog-details.html"><img src="img/blog-1.png" alt="" class="img-responsive" /></a>
+									<p><i class="fa fa-calendar"></i> 20 Dec 2016</p>
+								</div>
+								
+								<div class="texts">
+									<p class="post-meta"><i class="fa fa-user"></i> John Doe   /  <i class="fa fa-clock-o"></i> 17 hours ago</p>
+									<h4><a class="branding-color" href="blog-details.html">The World’s First $1 Million Festival Ticket</a></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+									<a href="blog-details.html" class="read-more text-uppercase">read more <i class="fa fa-chevron-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-xs-6">
+							<div class="single">
+								<div class="blog-img">
+									<a href="blog-details.html"><img src="img/blog-2.png" alt="" class="img-responsive" /></a>
+									<p><i class="fa fa-calendar"></i> 20 Dec 2016</p>
+								</div>
+								
+								<div class="texts">
+									<p class="post-meta"><i class="fa fa-user"></i> John Doe</p>
+									<h4><a class="branding-color" href="blog-details.html">The World’s First $1 Million Festival Ticket</a></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+									<a href="blog-details.html" class="read-more text-uppercase">read more <i class="fa fa-chevron-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-xs-6">
+							<div class="single">
+								<div class="blog-img">
+									<a href="blog-details.html"><img src="img/blog-3.png" alt="" class="img-responsive" /></a>
+									<p><i class="fa fa-calendar"></i> 20 Dec 2016</p>
+								</div>
+								
+								<div class="texts">
+									<p class="post-meta"><i class="fa fa-user"></i> John Doe</p>
+									<h4><a class="branding-color" href="blog-details.html">The World’s First $1 Million Festival Ticket</a></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+									<a href="blog-details.html" class="read-more text-uppercase">read more <i class="fa fa-chevron-right"></i></a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="text-center">
+							<a class="text-uppercase btn blue-button white-color branding-color" href="blog-listing.html">view all</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>		<!-- end blog section -->
+		
+		
+		<section class="testimonial-area text-center branding-color">
+			<div class="container">
+				<div class="row">
+					<div class="section-title white-color">
+						<h1 class="title">Happy Client</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br/>
+						incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="clearfix"></div>
+					
+					<div class="testimonials carousel-owl clearfix">
+						<div class="item">
+							<div class="single">
+								<img src="img/testimonial-1.png" alt="" />
+								<h4 class="name">John Doe <span class="designation">CEO Google</span></h4>
+								<p>“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur”</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="single">
+								<img src="img/testimonial-2.png" alt="" />
+								<h4 class="name">Mac Man <span class="designation">Designer, Apple Inc</span></h4>
+								<p>“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur”</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="single">
+								<img src="img/testimonial-3.png" alt="" />
+								<h4 class="name">Bravo <span class="designation">Developer, Facebook</span></h4>
+								<p>“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur”</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="single">
+								<img src="img/testimonial-1.png" alt="" />
+								<h4 class="name">Bravo <span class="designation">Developer, Facebook</span></h4>
+								<p>“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur”</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="single">
+								<img src="img/testimonial-2.png" alt="" />
+								<h4 class="name">Bravo <span class="designation">Developer, Facebook</span></h4>
+								<p>“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur”</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>		<!-- end testimonial section -->
+		
+		
+		
+		<section class="location-area">
+			<div id="map"></div>
+			<div class="optin">
+				<div class="single location">
+					<i class="fa fa-location-arrow pull-left"></i>
+					<p>Location <span>321 King Street, Melbourne, Australia</span></p>
+				</div>
+				<div class="single phone">
+					<i class="fa fa-phone pull-left"></i>
+					<p>Phone <span>+(100) 262 695 8900</span></p>
+				</div>
+				<div class="single mail">
+					<i class="fa fa-envelope pull-left"></i>
+					<p>Support <span>support@yourcompany.com</span></p>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section class="contact-us-area text-center branding-color">
+			<div class="container">
+				<div class="row">
+					<div class="section-title">
+						<h1 class="title">Contact Us</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br/>
+						incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="clearfix"></div>
+					
+					<div class="contact-us clearfix">
+						<form id="contactForm" data-toggle="validator">
+							<div class="col-sm-4">
+								<div class="left">
+									<input type="text" id="name" placeholder="Name" required>
+									
+									<input type="email" id="email" placeholder="Email Address" required>
+									<input type="text" id="subject" placeholder="Subject" required>
+								</div>
+							</div>
+							
+							<div class="col-sm-8">
+								<div class="right text-left">
+									<textarea id="message" placeholder="Message" required></textarea>
+									<span class="help-block with-errors" style="color:red"></span>
+									<button class="btn blue-button white-color">Send Now</button>
+									<div id="msgSubmit" class="h3 text-center hidden"></div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>		<!-- end testimonial section -->
+		
+		<ul class="socials-full-width list-unstyled text-center">
+			<li><a href="#" class="facebook white-color"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+			<li><a href="#" class="twitter white-color"><i class="fa fa-twitter"></i> Twitter</a></li>
+			<li><a href="#" class="youtube white-color"><i class="fa fa-youtube-square"></i> Youtube</a></li>
+		</ul>
+		
+		<section class="footer-widget-area clearfix">
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-xs-6">
+						<div class="single about-text">
+							<h4 class="title">About Event</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+							<p>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single recent-posts">
+							<h4 class="title">Recent Posts</h4>
+							<div class="single-post">
+								<img src="img/recent-post-1.png" alt="" class="img-responsive pull-left" />
+								<p class="title"><a class="white-color" href="#">Adipisicing elit</a></p>
+								<p class="description">Incididunt ut labore et dolore magna aliqua</p>
+							</div>
+							<div class="single-post">
+								<img src="img/recent-post-2.png" alt="" class="img-responsive pull-left" />
+								<p class="title"><a class="white-color" href="#">Yes, tech startup</a></p>
+								<p class="description">Incididunt ut labore et dolore magna aliqua</p>
+							</div>
+							<div class="single-post">
+								<img src="img/recent-post-3.png" alt="" class="img-responsive pull-left" />
+								<p class="title"><a class="white-color" href="#">Academi fellowship</a></p>
+								<p class="description">Incididunt ut labore et dolore magna aliqua</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single instagram">
+							<h4 class="title">Instagram</h4>
+							<ul class="list-unstyled">
+								<li><a href="img/featured-1.png" class="popup"><img src="img/instagram-1.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="img/featured-2.png" class="popup"><img src="img/instagram-2.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="img/featured-4.png" class="popup"><img src="img/instagram-3.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="img/featured-3.png" class="popup"><img src="img/instagram-4.png" alt="" class="img-responsive" /></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single newsletter">
+							<h4 class="title">Newsletter</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<form action="">
+								<input type="email" class="branding-color" placeholder="Email Address" />
+								<button class="btn blue-button">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>				<!-- end footer-widget-area -->
+		
+		
+		<!-- Go to top button -->
+		<button data-rippleria-color="#fff" class="go-top"><i class="fa fa-angle-up"></i></button>
+		
+		<footer>
+			<div class="container text-center">
+				<div class="row">
+					<div class="copyright">
+						<img src="img/logo.png" alt="" class="logo" />
+						<p>&copy; Copyright 2016 <b>ZIM THEME</b>. All rights reserved Made by North UI with <i class="fa fa-heart"></i></p>
+					</div>
+				</div>
+			</div>
+		</footer>	<!-- end footer section -->
+		
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/vendor/easing.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdKsIAyUCdGRB20OFZnfEVfjrKAMhxl6E&sensor=false"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+		<script src="js/TimeCircles.js"></script>
+		<script src="js/onepage_nav.js"></script>
+		<script src="js/gmap.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
